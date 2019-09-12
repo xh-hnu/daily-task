@@ -10,7 +10,7 @@ public class CountViewModel extends ViewModel {
 
     public CountViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is dashboard fragment");
+        mText.setValue("This is Count fragment");
     }
 
     public LiveData<String> getText() {
