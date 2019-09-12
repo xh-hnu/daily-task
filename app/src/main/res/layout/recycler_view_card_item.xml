@@ -4,6 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:clickable="true"
     android:paddingBottom="5dp">
 
     <androidx.cardview.widget.CardView
@@ -11,6 +12,7 @@
         android:layout_height="100dp"
         android:elevation="5dp"
         app:cardCornerRadius="0dp"
+        android:foreground="?selectableItemBackground"
         app:cardElevation="5dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout

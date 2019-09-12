@@ -2,6 +2,7 @@ package com.hnu.xuhe.dailytask.ui.home.entity.adapter;
 
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,9 +37,18 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        TaskItem task = tasks.get(position);
+        final TaskItem task = tasks.get(position);
         holder.studyContent.setText(task.getStudyContent());
         holder.bgColor.setBackground(context.getResources().getDrawable(task.getBgColor()));
+        holder.studyTime.setText(task.getStudyTime());
+        holder.level.setText(task.getLevel());
+        holder.startBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String TAG = "click start btn ";
+                Log.d(TAG, task.toString());
+            }
+        });
     }
 
     @Override
