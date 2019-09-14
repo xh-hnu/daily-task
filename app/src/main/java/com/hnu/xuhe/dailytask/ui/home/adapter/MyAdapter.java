@@ -1,7 +1,6 @@
-package com.hnu.xuhe.dailytask.ui.home.entity.adapter;
+package com.hnu.xuhe.dailytask.ui.home.adapter;
 
 import android.content.Context;
-import android.graphics.drawable.ColorDrawable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
