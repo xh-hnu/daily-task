@@ -1,5 +1,11 @@
 package com.hnu.xuhe.dailytask.ui.home.entity;
 
+import lombok.Data;
+
+/**
+ * @author xuhe
+ */
+@Data
 public class TaskItem {
 
     private String studyContent;
